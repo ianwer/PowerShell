@@ -1,0 +1,1 @@
+Get-ADComputer -Filter * -Property * | Select-Object Name,OperatingSystem,OperatingSystemServicePack,OperatingSystemVersion | Export-CSV OSVersion.csv -NoTypeInformation -Encoding UTF8	
